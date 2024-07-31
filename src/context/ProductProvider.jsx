@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import ProductContext from "./ProductContext";
 
-const API_KEY = "cJIJCsMTwNL01knnyPKozuT4ISxP5jh4ffdDfuJy"
+const API_KEY = process.env.API_KEY
+
 export const ProductProvider = ({ children }) => {
   const [products, setProducts] = useState([]);
 
